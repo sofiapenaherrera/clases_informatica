@@ -53,6 +53,7 @@ Prueba con diferentes valores de x y determina para qué valor de x, y es igual 
 x = -3
 y = x**2 + 6*x + 9
 print(y)
+print("El valor de y es igual a 0 cuando x es igual a -3.")
 # %%
 #Encuentra la longitud de las palabras “python” y “dragón” y realiza una comparación booleana (verdadero/falso).  
 longitud_python = len("python")
