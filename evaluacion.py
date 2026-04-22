@@ -1,10 +1,10 @@
 """Evaluación 1
-Nombre: Sofía Peñaherrera
+Nombre: Sofía Peñaherrera  :)
 Fecha: 2025-05-01"""
 
 
-# ===== PARTE A =====
 
+# ===== PARTE A =====
 # Respuesta 1:
 """Observa el siguiente código:
 nombre = "Lucía"
@@ -67,8 +67,8 @@ largo = float(input("Ingrese el largo del terreno: "))
 precio = float(input("Ingrese el precio por metro cuadrado: "))
 area = ancho * largo
 costo = area * precio
-print("Área total: " + str(area))
-print("Costo estimado: " + str(costo))
+print("El área total es: " + str(area))
+print("El costo estimado es: " + str(costo))
 #a) Los errores principales eran que las variables ancho, largo y precio se estaban almacenando como cadenas de texto (str) debido a la función input(), lo que causaba un error al intentar realizar operaciones matemáticas con ellas. Además, al imprimir el área y el costo, se intentaba unir un número (float) con una cadena de texto sin convertir el número a cadena, lo que también generaba un error.
 #b) Mi corrección permite obtener resultados válidos porque se convierte la entrada del usuario a tipo float, lo que permite realizar las operaciones matemáticas correctamente. Además, al imprimir el área y el costo, se convierte el resultado a cadena de texto utilizando str(), lo que permite manipular la información sin errores.
 # %%
@@ -85,3 +85,44 @@ print(len(frase))
 print("Python" in frase)
 print(frase.replace("Tecnología", "Programación"))
 print(frase.split())
+
+
+
+# ===== PARTE C =====
+# Programa integrador
+"""Una tienda desea generar un resumen de presupuesto para cubrir una pared rectangular con
+papel decorativo.
+Desarrolla un programa que:
+1. Solicite al usuario: Nombre, apellido, país, ancho de la pared, alto de la pared, precio por
+metro cuadrado
+o Calcule: área de la pared, costo total estimado
+2. Cree la variable nombre_completo.
+1. Muestre un reporte final que incluya:
+o nombre completo, país, área calculada, costo total (La impresión del reporte
+final debe realizarse usando f-strings.)
+3. Muestre además:
+o nombre_completo en mayúsculas
+o la longitud de nombre_completo
+o si la letra "a" está presente en nombre_completo
+o si el costo total es mayor que 100 dólares"""
+# %% 
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+pais = input("Ingrese su país: ")
+ancho = float(input("Ingrese el ancho de la pared: "))
+alto = float(input("Ingrese el alto de la pared: "))
+precio = float(input("Ingrese el precio por metro cuadrado: "))
+
+nombre_completo = nombre+" "+apellido
+area = ancho * alto
+costo_total = area * precio
+
+print(f"El nombre completo es: {nombre_completo}")
+print(f"País: {pais}")
+print(f"El área calculada es: {area}")
+print(f"El costo total es: {costo_total}")
+
+print(f"El nombre completo en mayúsculas es: {nombre_completo.upper()}")
+print(f"La longitud del nombre completo es: {len(nombre_completo)}")
+print(f"¿Está presente la letra 'a' en el nombre completo? { 'a' in nombre_completo }")
+print(f"¿El costo total es mayor que 100 dólares? {costo_total > 100}")
