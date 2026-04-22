@@ -97,12 +97,9 @@ print(texto[-1])
 print(texto[5])
 #%%
 #Nivel 6
-nombre_completo = "Sofía Peñaherrera"
-
-print(f"Hola, mi nombre es {nombre_completo}")
-
-# Acrónimo
 nombre = "Sofía"
 apellido = "Peñaherrera"
+print(f"Hola, mi nombre es {nombre} {apellido}")
 
+# Acrónimo
 print(nombre[0] + apellido[0])

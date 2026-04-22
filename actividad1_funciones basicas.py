@@ -10,6 +10,6 @@ print(3 ** 4)  # Exponente
 print(3 // 4)  # División entera
 # CADENA
 print("Sofía")
-print("TuApellido")
+print("Peñaherrera")
 print("Ecuador")
 print("Estoy disfrutando de 30 días de Python")
