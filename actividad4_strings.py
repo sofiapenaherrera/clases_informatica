@@ -99,7 +99,7 @@ print(texto[5])
 #Nivel 6
 nombre_completo = "Sofía Peñaherrera"
 
-print(f"Hola, mi nombre es {nombre_completo})
+print(f"Hola, mi nombre es {nombre_completo}")
 
 # Acrónimo
 nombre = "Sofía"
