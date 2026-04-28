@@ -18,3 +18,34 @@ else:
             print("Su calificación es C")
         else:
             print("Su calificación es D")
+# %%
+# Actividad 2: Crear un programa que solicite un numero y devuelva si es cero, par positivo o negativo o impar positivo o negativo.
+numero = int(input("Ingrese un número: "))
+if numero == 0:
+    print("El número es cero")
+else:    
+    if numero > 0:
+        if numero % 2 == 0:
+            print("El número es par positivo")
+        else:
+            print("El número es impar positivo")
+    else:
+        if numero % 2 == 0:
+            print("El número es par negativo")
+        else:
+            print("El número es impar negativo")
+
+# Ahora con elif
+# %%
+numero = int(input("Ingrese un número: "))
+if numero == 0:
+    print("El número es cero")
+elif numero > 0 and numero % 2 == 0:
+    print("El número es par positivo")
+elif numero > 0 and numero % 2 != 0:
+    print("El número es impar positivo")
+elif numero < 0 and numero % 2 == 0:
+    print("El número es par negativo")
+else:
+    print("El número es impar negativo")
+# %%
