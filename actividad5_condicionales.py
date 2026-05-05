@@ -121,7 +121,7 @@ elif mes in ["junio", "julio", "agosto"]:
 else:
     print("Mes inválido")
 # %%
-fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = ["banana", "orange", "mango", "lemon"]
 
 fruta = input("Ingrese una fruta: ").lower()
 
