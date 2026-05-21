@@ -35,3 +35,14 @@ print("El promedio es:", promedio)
 numero = int(input("Ingrese un número: "))
 for i in range (9,0, -2):
     print(f"{numero} x {i} = {numero*i}")
+# %%
+# Asignar estudiantes a los puestos de un laboratorio
+# El laboratorio tiene 3 filas y 4 computadoras por cada fila
+ 
+# Ciclo externo: recorre las filas del laboratorio
+# range(1, 4) genera los valores 1, 2 y 3
+for fila in range(1, 4):
+    for computadora in range(1, 5):
+        nombre = input("Ingrese el nombre del estudiante: ")
+        print(f"{nombre} asignado a Fila {fila} - Computadora  {computadora}")
+    print(f"Fin de la fila {fila}")
