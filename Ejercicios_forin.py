@@ -19,18 +19,17 @@ for letter in language:
 palabra = input("Ingrese una palabra: ")
 vocales = 0
 consonantes = 0
-# Ejercicio 5
 for letra in palabra.lower():
     if letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u':
         vocales += 1
     else:
         consonantes += 1
 print(f"La palabra '{palabra}' tiene {vocales} vocales y {consonantes} consonantes, tiene {consonantes + vocales} caracteres en total")
-# Ejercicio 6
+# Ejercicio 5
 it_companies = {'Facebook','Facebook'}
 for company in it_companies:
     print(company)
-# Ejercicio 7
+# Ejercicio 6
 numbers=[0,1,2,3,4,5]
 usuario=int(input("Ingrese un número: "))
 for number in numbers:
@@ -45,5 +44,5 @@ cedulaLimpia = ""
 for caracter in cedula:
     if caracter == '-' or caracter == " ":
         continue
-    cedulaLimpia = cedulaLimpia + caracter
+    cedulaLimpia += caracter
 print(cedulaLimpia)
