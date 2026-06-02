@@ -38,7 +38,7 @@ for number in numbers:
         break 
 else:
     print("Numero no encontrado")
-# Ejercicio 8
+# Ejercicio 7
 cedula = input("Ingrese su cédula: ")
 cedulaLimpia = ""
 for caracter in cedula:
