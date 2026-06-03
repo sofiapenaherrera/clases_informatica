@@ -73,7 +73,7 @@ def metros_a_pulgadas(metros):
     return metros * 39.3701
 
 metros = float(input("Ingrese una cantidad en metros: "))
-print("\nMenú de conversión")
+print("Menú de conversión")
 print("1. Centímetros")
 print("2. Milímetros")
 print("3. Kilómetros")
@@ -109,7 +109,7 @@ nota1 = float(input("Introduce la primera calificación: "))
 nota2 = float(input("Introduce la segunda calificación: "))
 nota3 = float(input("Introduce la tercera calificación: "))
 while True:
-    print("\n--- MENÚ DE CALIFICACIONES ---")
+    print("--- MENÚ DE CALIFICACIONES ---")
     print("1. Calcular el promedio")
     print("2. Mostrar la nota mayor")
     print("3. Mostrar la nota menor")
