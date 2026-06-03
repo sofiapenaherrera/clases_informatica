@@ -63,36 +63,42 @@ print(f"Subtotal: ${subtotal}")
 print(f"IVA (15%): ${iva}")
 print(f"Total a pagar: ${total_pagar}")
 #%%
-def metros_a_centimetros(metros):
-    return metros * 100
-def metros_a_milimetros(metros):
-    return metros * 1000
-def metros_a_kilometros(metros):
-    return metros / 1000
-def metros_a_pulgadas(metros):
-    return metros * 39.3701
-
-metros = float(input("Ingrese una cantidad en metros: "))
-print("Menú de conversión")
-print("1. Centímetros")
-print("2. Milímetros")
-print("3. Kilómetros")
-print("4. Pulgadas")
-opcion = int(input("Seleccione una opción (del 1 al 4): "))
-if opcion == 1:
-    resultado = metros_a_centimetros(metros)
-    print(f"{metros} metros = {resultado} centímetros")
-elif opcion == 2:
-    resultado = metros_a_milimetros(metros)
-    print(f"{metros} metros = {resultado} milímetros")
-elif opcion == 3:
-    resultado = metros_a_kilometros(metros)
-    print(f"{metros} metros = {resultado} kilómetros")
-elif opcion == 4:
-    resultado = metros_a_pulgadas(metros)
-    print(f"{metros} metros = {resultado} pulgadas")
-else:
-    print("Opción no válida.")
+#%%
+#Ejercicio1
+def metros_a_centimetros (metros):
+    resultado = metros * 100
+    return resultado
+def metros_a_milimetros (metros): 
+    resultado = metros * 1000
+    return resultado
+def metros_a_kilometros (metros):
+    resultado = metros / 1000
+    return resultado
+def metros_a_pulgadas (metros):
+    resultado = metros * 39.37
+    return resultado
+while True:
+    metros = float(input("Ingrese una cantidad en metros: "))
+    print("Menú de conversión")
+    print("1. Centímetros")
+    print("2. Milímetros")
+    print("3. Kilómetros")
+    print("4. Pulgadas")
+    print("5. Salir del programa")
+    opcion = int(input("Seleccione una opción (del 1 al 5): "))
+    if opcion == 1:
+        print(f"{metros} metros = {metros_a_centimetros(metros)} centímetros")
+    elif opcion == 2:
+        print(f"{metros} metros = {metros_a_milimetros(metros)} milímetros")
+    elif opcion == 3:
+        print(f"{metros} metros = {metros_a_kilometros(metros)} kilómetros")
+    elif opcion == 4:
+        print(f"{metros} metros = {metros_a_pulgadas(metros)} pulgadas")
+    elif opcion == 5:
+        print(f"Ha salido del programa")
+        break
+    else:
+        print("Opción no válida.")
 #%%
 def calcular_promedio(n1, n2, n3):
     return (n1 + n2 + n3) / 3
