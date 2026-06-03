@@ -26,3 +26,44 @@ while opcion != "C":
         print("Saliendo del programa")
     else:
         print("Opción no válida")
+#%%
+clave_correcta = "python123"
+clave = ""
+while clave != clave_correcta:
+    clave = input("Ingrese la clave de acceso: ")
+    if clave == clave_correcta:
+        print("Acceso permitido")
+    else:
+        print("Clave incorrecta. Intente nuevamente.")
+print("Bienvenido al sistema de habilitación para el reto final de Python")
+temas = ["variables", "cálculos", "input", "print", "f-string", "condicionales", "ciclos"]
+print("Temas evaluados en la unidad:")
+for tema in temas:
+    print(f"- {tema}")
+cantidad_estudiantes = int(input("Ingrese la cantidad de estudiantes a revisar: "))
+for i in range(cantidad_estudiantes):
+    print(f"Registro del estudiante {i + 1}")
+    nombre = input("Ingrese el nombre del estudiante: ")
+    nota_basicos = float(input("Ingrese la nota de ejercicios básicos: "))
+    nota_condicionales = float(input("Ingrese la nota de condicionales: "))
+    nota_ciclos = float(input("Ingrese la nota de ciclos: "))
+    practicas = int(input("Ingrese la cantidad de prácticas completadas: "))
+    promedio = (nota_basicos + nota_condicionales + nota_ciclos) / 3
+    if promedio >= 9:
+        if practicas >= 5:
+            estado = "Habilitado con nivel alto"
+        else:
+            estado = "Pendiente por prácticas"
+    elif promedio >= 7:
+        if practicas >= 4:
+            estado = "Habilitado"
+        else:
+            estado = "Pendiente por prácticas"
+    else:
+        estado = "Requiere refuerzo"
+    print("Reporte del estudiante")
+    print(f"Nombre: {nombre}")
+    print(f"Promedio final: {promedio}")
+    print(f"Prácticas completadas: {practicas}")
+    print(f"Estado académico: {estado}")
+print("Proceso finalizado")
